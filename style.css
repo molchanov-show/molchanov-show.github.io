@@ -1,0 +1,353 @@
+* {
+    font-family: 'Geometria';
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainWidth: 1100px;
+    --transitioTime: .3s;
+    --black: #111;
+    --blockWidth: 330px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*  default classes  */
+
+.huge-title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.medium-title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/*  header  */
+
+header {
+    background-image: url(/img/photos/bg.jpg);
+    background-size: max(100vw, 1920px);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header * {
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: var(--mainWidth);
+    padding-top: 40px;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+.link:first-child {
+    margin-left: 0;
+}
+
+.intro {
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 55vh;
+    padding: 30px;
+    background-color: var(--black);
+    /* border-radius: 8px; */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12.5px);
+}
+
+.intro__text {
+    margin: 10px 0 20px 0;
+}
+
+.transparent-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: 2px solid white;
+    color: white;
+    background: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: var(--transitioTime);
+}
+
+.transparent-button:hover {
+    background: white;
+    color: var(--black);
+}
+
+.intro__bottom {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.social-icon {
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    transition: var(--transitioTime);
+}
+
+.social-icon:first-child {
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    opacity: .6;
+}
+
+.vk {
+    background-image: url(/img/icons/vk.png);
+}
+
+.inst {
+    background-image: url(/img/icons/instagram.png);
+}
+
+
+/*  main  */
+
+.about-me {
+    padding: 120px 0;
+    margin: 0 auto;
+    width: var(--mainWidth);
+    text-align: center;
+}
+
+.about-me__block-container {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-me__block {
+    width: var(--blockWidth);
+}
+
+.about-me__img {
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+    width: var(--mainWidth);
+    margin: 0 auto;
+    position: relative;
+}
+
+.portfolio::before {
+    content: '';
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: var(--black);
+    padding: 430px 100%;
+    left: -40%;
+}
+
+.img-wrapper {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.img-wrapper__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper__column:first-child {
+    margin-top: 40px;
+}
+
+.img-wrapper__column:last-child {
+    margin-top: 80px;
+}
+
+.card {
+    width: var(--blockWidth);
+    position: relative;
+    margin-top: 30px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__text {
+    position: absolute;
+    padding: 25px;
+    opacity: 0;
+    transition: var(--transitioTime);
+    text-align: start;
+    backdrop-filter: blur(8px);
+    bottom: 0;
+    top: 0;
+}
+
+.card:hover .card__text {
+    opacity: 1;
+}
+
+.services {
+    width: var(--mainWidth);
+    margin: 120px auto;
+    text-align: center;
+}
+
+/* .slider {
+    width: 820px;
+    height: 460px;
+    margin: 50px auto 30px auto;
+}
+
+.slide {
+    color: white;
+    padding: 135px 110px;
+    background-image: url(/img/photos/graduation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*/
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper {
+    width: var(--widthMain);
+    margin: 50px auto 30px auto;
+    height: 560px;
+}
+
+.swiper-slide {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.promo {
+    background-image: url(/img/photos/promo.jpg);
+}
+
+.graduation {
+    background-image: url(/img/photos/graduation.jpg);
+}
+
+.marriage {
+    background-image: url(/img/photos/marriage.jpg);
+}
+
+.jubilee {
+    background-image: url(/img/photos/jubilee.jpg);
+}
+
+.party {
+    background-image: url(/img/photos/party.jpg);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;
+}
+
+.event-name {
+    margin-top: 190px;
+}
+
+.slide-content {
+    position: unset;
+    padding: 0 200px;
+    z-index: 3;
+}
+
+.slide__text {
+    margin: 15px 0;
+}
+
+.swiper-slide::after {
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.quote-img {
+    width: 25px;
+    height: 25px;
+}
+
+.quote__text-content {
+    text-align: start;
+    margin-left: 36px;
+    position: relative;
+}
+
+.quote__text-content::before {
+    position: absolute;
+    content: '';
+    background-color: var(--black);
+    padding: 31.5px 1.5px;
+    left: -18px;
+}
+
+.quote__text {
+    text-align: start;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 33px;
+}
