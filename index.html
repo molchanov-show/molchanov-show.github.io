@@ -9,13 +9,13 @@
     <title>Молчанов</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="/img/icons/man.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header-top">
-            <!-- <img class="logo" /> -->
-            <p>MOLCHANOV</p>
+            <img src="/img/photos/logo-w.png" class="logo">
             <nav>
                 <a href="#about-me" class="link">обо мне</a>
                 <a href="#portfolio" class="link">портфолио</a>
@@ -24,13 +24,24 @@
                 <a href="#contacts" class="link">контакты</a>
             </nav>
         </div>
-
+        <div class="burger-button">
+            <span class="line-1 line"></span>
+            <span class="line-2 line"></span>
+            <span class="line-3 line"></span>
+        </div>
+        <div class="burger-menu">
+            <a href="#about-me" class="burger-link">обо мне</a>
+            <a href="#portfolio" class="burger-link">портфолио</a>
+            <a href="#services" class="burger-link">услуги</a>
+            <a href="#review" class="burger-link">отзывы</a>
+            <a href="#contacts" class="burger-link">контакты</a>
+        </div>
         <div class="intro">
             <h2 class="medium-title">Ведущий мероприятий в Ижевске под ключ с индивидуальной программой</h2>
             <p class="intro__text text">Проведу твою свадьбу, корпоратив, юбилей или выпускной со своей командой
-                профессионалов. Проработаем уникальный сизгот сценарий именно под твой запрос!</p>
+                профессионалов. Проработаем уникальный сценарий именно под твой запрос!</p>
             <div class="intro__bottom">
-                <button class="transparent-button send-req">Подать заявку</button>
+                <a href="https://vk.com/im?sel=-130991536" class="transparent-button send-req">Подать заявку</a>
                 <div class="social">
                     <a href="https://vk.com/etozheilya18" class="social-icon vk"></a>
                     <a href="https://www.instagram.com/molchanovmozhet/" class="social-icon inst"></a>
@@ -39,6 +50,7 @@
         </div>
     </header>
     <main>
+        <a href="#header"><img src='/img/icons/arrow.png' class="arrow-up"></a>
         <div class="about-me" id="about-me">
             <h1 class="huge-title">Обо мне</h1>
             <div class="about-me__block-container">
@@ -131,18 +143,6 @@
         </div>
         <div class="services" id="services">
             <h1 class="huge-title">Услуги</h1>
-            <!-- <div class="slider">
-                <div class="slide">
-                    <h2 class="middle-title">Выпускной</h2>
-                    <p class="slide__text text">Выпускной проводится на открытом воздухе, часто в присутствии родителей.
-                        Цель выпускного – создать положительный образ школы, Вуза, колледжа, поставить финальную точку и
-                        вспомнить хорошие моменты учёбы.</p>
-                    <button class="transparent-button">Заказать</button>
-                </div>
-
-                <div class="arrow-previous"></div>
-                <div class="arrow-next"></div>
-            </div> -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide marriage">
@@ -152,7 +152,7 @@
                                 Выездные мероприятия с ведущим, диджеем и координатором. Предпочтительно летнее время.
                                 Ключевой целью мероприятия является знакомство гостей, отдых и хорошее настроение.
                             </p>
-                            <button class="transparent-button">Заказать </button>
+                            <a href="https://vk.com/im?sel=-130991536" class="transparent-button">Заказать </a>
                         </div>
                     </div>
                     <div class="swiper-slide party">
@@ -163,7 +163,7 @@
                                 коллектива, формирование общих целей и ценностей на предстоящий год, отдых и рефлексия
                                 коллектива.
                             </p>
-                            <button class="transparent-button">Заказать</button>
+                            <a href="https://vk.com/im?sel=-130991536" class="transparent-button">Заказать </a>
                         </div>
                     </div>
                     <div class="swiper-slide jubilee">
@@ -176,7 +176,7 @@
                                 семейная
                                 встреча, объединение родственников и друзей вокруг юбиляра.
                             </p>
-                            <button class="transparent-button">Заказать</button>
+                            <a href="https://vk.com/im?sel=-130991536" class="transparent-button">Заказать </a>
                         </div>
                     </div>
                     <div class="swiper-slide graduation">
@@ -190,7 +190,7 @@
                                 точку и
                                 вспомнить хорошие моменты учёбы.
                             </p>
-                            <button class="transparent-button">Заказать</button>
+                            <a href="https://vk.com/im?sel=-130991536" class="transparent-button">Заказать </a>
                         </div>
                     </div>
                     <div class="swiper-slide promo">
@@ -202,7 +202,7 @@
                                 услугу.
                                 Цель – повысить продажи торговой точки, сети в целом.
                             </p>
-                            <button class="transparent-button">Заказать</button>
+                            <a href="https://vk.com/im?sel=-130991536" class="transparent-button">Заказать </a>
                         </div>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             Спасибо Илье за проведение нашего свадебного вечера! Выслушал и учел все наши
                             пожелания, с творчеством подошел к подготовке к вечеру, составил программу специально под
                             нас,
@@ -251,7 +251,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             Мы с мужем долго выбирали ведущего по своим особым критериям 🙂И вот наконец то повстречали
                             Илью )
                             Хотим отметить, что он с первых секунд встречи произвел на нас положительное впечатление.
@@ -276,7 +276,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             ❤❤❤Хотим выразить Илье и его команде ОГРОМНУЮ БЛАГОДАРНОСТЬ за проведение нашей свадьбы!
                             Настоящие профессионалы своего дела! Живём мы в
                             разных городах, не было возможности часто встречаться, но всё прошло просто ИДЕАЛЬНО! Илья
@@ -294,7 +294,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             Хотим сказать огромное спасибо нашему ведущему Илье Молчанову! Илья - Ты просто огонь! Илья,
                             нам индивидуально составил программу, учел все нюансы и это
                             очень приятно)) Илья - красавчик, с очаровательной улыбкой которая сразит всех и настроит
@@ -314,7 +314,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             Илья, хочу поблагодарить от лица всего нашего коллектива за проведение суперского
                             новогоднего корпоратива!!!! Никто из
                             нашей компании не успел заскучать в течении вечера, было очень динамично, весело и
@@ -332,7 +332,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="text">
+                        <p class="text review-text">
                             Илья провел нам свадьбу. Это был его первый опыт проведения. Очень веселый, зажигательный
                             парень!!! Спасибо за веселое
                             настроение. все были в восторге и остались довольными. Гости долго еще рассказывали.....
@@ -346,13 +346,15 @@
     <footer class="contacts" id="contacts">
         <h1 class="huge-title">Контакты</h1>
         <p class="number">+7 (123) 456 78 90</p>
-        <p class="quest">Появились вопросы?</p>
-        <input type="text" name="" id="" placeholder="Ваше имя" class="input-info">
-        <input type="text" name="" id="" placeholder="Ваше телефон" class="input-info">
-        <input type="submit" value="Отправить" class="submit">
+        <p class="quest">Появились вопросы ? <br><br> Пишите в группу в <a
+                href="https://vk.com/im?media=&sel=-130991536" class="vk-link">VK</a> !</p>
         <div class="social">
-            <a href="https://vk.com/etozheilya18" class="social-icon vk"></a>
+            <a href="https://vk.com/wakespead" class="social-icon vk"></a>
             <a href="https://www.instagram.com/molchanovmozhet/" class="social-icon inst"></a>
+        </div>
+        <div class="author">
+            <p>made by</p>
+            <a href="https://github.com/fast-typing" class="github">cawa</a>
         </div>
     </footer>
 </body>
