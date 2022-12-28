@@ -99,7 +99,7 @@ nav {
     transition: var(--transitioTime);
     z-index: 3;
     right: 0;
-    top: -100%;
+    top: min(-100vh, -100vw);
     width: 340px;
     padding-top: 100px;
     padding-bottom: 0;
